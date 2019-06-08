@@ -33,8 +33,7 @@ function shuffle(x) {
 }
 
 imgArray = shuffle(allCards);
-console.log(allCards);
-//console.log(endArray);
+
 
 //2.
 var numChosenCards = 0;
@@ -60,7 +59,6 @@ function clicks(index) {
         firstCard = index;
         document.images[index].src = allCards[index];
         numChosenCards = 1;
-        console.log("first card chosen");
     }
     else {
         numChosenCards = 2;
@@ -85,8 +83,6 @@ function control() {
     }
     if (numberOfClicks == imgArray.length / 2) {
         document.getElementById("win").innerHTML = "You won! Congrats!! Press the NEW GAME - button for a new game!";
-        console.log(numberOfClicks);
-        console.log("won");
         startNewGame();
     }
 
@@ -94,5 +90,4 @@ function control() {
 }
 reload.addEventListener('click', () => {
     window.location.reload();
-    console.log("is shuffeling")
 });
