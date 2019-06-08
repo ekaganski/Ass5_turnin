@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>TestAssignment5</title>
+    <meta charset="utf-8">
+
+    <!-- link to my css file -->
+    <link rel="stylesheet" type="text/css" href="./css/Assignment5.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+
+<body onload="shuffle ()">
+
+    <div class="row"></div>
+    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" id="header">
+        <h1>Memory Game</h1>
+        <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" id="buttonReload">
+            <div class="controls">
+                <button id="reload" type="button">New Game</button>
+              </div>
+    </div>
+    <section class="outerbox">
+        <div class="container memory-game text-center">
+            <div class="row">
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(0)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(1)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(2)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(3)"><img
+                        src="images/backcard.jpg" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(4)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(5)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(6)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(7)"><img
+                        src="images/backcard.jpg" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(8)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(9)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(10)"><img
+                        src="images/backcard.jpg" />
+                </div>
+                <div class="memory-card col-lg-3 col-md-3 col-sm-3 col-xs-6" onclick="clicks(11)"><img
+                        src="images/backcard.jpg" />
+                </div>
+
+    </section>
+    <div class="row"></div>
+    <div class=" col-lg-12 col-md-12 col-sm-12 col-xs-12" id="win">
+    </div>
+    <!-- link to my js file -->
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="./js/Test_Ass5.js"></script>
+</body>
+
+</html>
