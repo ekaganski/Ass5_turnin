@@ -45,11 +45,20 @@ var s;
 
 function startTimer() {
     s = setInterval(control, 1000);
-    document.getElementsByClassName("memory-card").disabled = true;
+    for (var i = 0; i< 12; i++){
+        var otherimages = document.getElementsByClassName("memory-card")[i];
+        otherimages.classList.add("not-clickable");
+        console.log(otherimages);
+    }
 }
 
 function stopTimer() {
     clearInterval(s);
+    for (var i = 0; i< 12; i++){
+        var otherimages = document.getElementsByClassName("memory-card")[i];
+        otherimages.classList.remove("not-clickable");
+        console.log(otherimages);
+    }
 }
 
 function clicks(index) {
@@ -60,8 +69,14 @@ function clicks(index) {
         document.images[index].src = allCards[index];
         numChosenCards = 1;
     }
+    /*else if(numChosenCards === 1){
+        
+    }*/
     else {
         numChosenCards = 2;
+        //var otherimages = document.getElementsByClassName("memory-card");
+        //otherimages.classList.add("not-clickable");
+        //console.log(otherimages);
         secondCard = index;
         document.images[index].src = allCards[index];
         startTimer();
@@ -72,7 +87,6 @@ function clicks(index) {
 function control() {
     stopTimer();
     if (imgArray[firstCard] == imgArray[secondCard]) {
-
         numberOfClicks++;
         numChosenCards = 0;
     }
