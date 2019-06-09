@@ -48,7 +48,6 @@ function startTimer() {
     for (var i = 0; i< 12; i++){
         var otherimages = document.getElementsByClassName("memory-card")[i];
         otherimages.classList.add("not-clickable");
-        console.log(otherimages);
     }
 }
 
