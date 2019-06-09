@@ -57,7 +57,7 @@ function stopTimer() {
     for (var i = 0; i< 12; i++){
         var otherimages = document.getElementsByClassName("memory-card")[i];
         otherimages.classList.remove("not-clickable");
-        console.log(otherimages);
+     
     }
 }
 
@@ -69,14 +69,8 @@ function clicks(index) {
         document.images[index].src = allCards[index];
         numChosenCards = 1;
     }
-    /*else if(numChosenCards === 1){
-        
-    }*/
     else {
         numChosenCards = 2;
-        //var otherimages = document.getElementsByClassName("memory-card");
-        //otherimages.classList.add("not-clickable");
-        //console.log(otherimages);
         secondCard = index;
         document.images[index].src = allCards[index];
         startTimer();
